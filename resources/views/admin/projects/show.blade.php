@@ -5,7 +5,7 @@
     <h2>Progetto:</h2>
     <h3>{{ $project->title }}</h3>
     <img src="{{ asset('storage/' . $project->thumb) }}" alt="">
-    <h3>{{ $types[$project->type_id]->name }}</h3>
+    <h3>{{ $project->type->name }}</h3>
     <p>{{ $project->description }}</p>
     <h6>{{ $project->year }}</h6>
     <a href="{{ route('admin.projects.edit', $project) }}" class="btn btn-warning">Modifica</a>
